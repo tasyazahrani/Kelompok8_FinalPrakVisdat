@@ -22,7 +22,7 @@ const tooltip = d3.select("body")
   .style("pointer-events", "none")
   .style("opacity", 0);
 
-d3.csv("Data/survey_lung_cancer.csv").then(data => {
+d3.csv("survey lung cancer.csv").then(data => {
     const categories = ["2", "1"]; // 2 = Ya, 1 = Tidak
     const labels = { "2": "Ya", "1": "Tidak" };
     
