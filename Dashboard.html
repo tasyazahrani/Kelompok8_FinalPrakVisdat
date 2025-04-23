@@ -4,29 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Kesehatan Paru-paru</title>
-    <link rel="stylesheet" href="CSS/Dashboard.css">
+    <link rel="stylesheet" href="Dashboard.css">
 </head>
 <body>
-    <div id="root" class="min-h-screen bg-gray-100 p-6">
-        <div class="max-w-6xl mx-auto">
-            <header class="bg-white p-6 rounded-lg shadow-lg mb-6">
-                <h1 class="text-2xl font-bold text-gray-800">Dashboard Kesehatan Paru-paru</h1>
-                <p class="text-gray-600">Visualisasi data untuk memahami faktor risiko dan gejala penyakit paru-paru</p>
-            </header>
-            
-            <main id="main-content" class="min-h-screen">
-                <!-- Konten utama akan dirender oleh JavaScript -->
-            </main>
+    <div class="header">
+        <h1>Dashboard Kesehatan Paru-paru</h1>
+        <p>Visualisasi data untuk memahami faktor risiko dan gejala penyakit paru-paru</p>
+    </div>
+    
+    <div class="dashboard-grid">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="chart-icon"></div>
+            <h2>Hubungan Merokok dan Kanker</h2>
+            <a href="index.html" id="merokok-link">Klik untuk melihat visualisasi detail</a>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="chart-icon"></div>
+            <h2>Perbandingan Gejala pada Penyakit Kronis</h2>
+            <a href="#" id="gejala-kronis-link">Klik untuk melihat visualisasi detail</a>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="chart-icon"></div>
+            <h2>Distribusi Usia Pasien Kanker Paru</h2>
+            <a href="#" id="usia-link">Klik untuk melihat visualisasi detail</a>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="chart-icon"></div>
+            <h2>Perbandingan Gejala Berdasarkan Gender</h2>
+            <a href="#" id="gender-link">Klik untuk melihat visualisasi detail</a>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="chart-icon"></div>
+            <h2>Pengaruh Alkohol terhadap Kesehatan Paru</h2>
+            <a href="#" id="alkohol-link">Klik untuk melihat visualisasi detail</a>
         </div>
     </div>
 
-    <!-- Dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.5.0/Recharts.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
-    
-    <!-- Main App -->
-    <script src="JS/Dashboard.js"></script>
+    <script src="Dashboard.js"></script>
 </body>
 </html>
