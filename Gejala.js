@@ -22,7 +22,7 @@ const tooltip = d3.select("body")
   .style("pointer-events", "none")
   .style("opacity", 0);
 
-d3.csv("Data/survey_lung_cancer.csv").then(data => {
+d3.csv("survey lung cancer.csv").then(data => {
   const categories = ["YES", "NO"];
   const subgroups = ["Batuk Kronis", "Sesak Napas"];
   const summary = { YES: { "Batuk Kronis": 0, "Sesak Napas": 0 }, NO: { "Batuk Kronis": 0, "Sesak Napas": 0 } };
